@@ -1,0 +1,9 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Wysyłanie i obsługa sygnałów (program 2)
+
+Opis działania: Program ma za zadanie uruchomić podprogram 1.exe przy pomocy funkcji exec, po czym wysłać do niego sygnał SIGTERM poprzez funkcję systemową kill.
+
+Opis uruchamiania: make, a następnie make run
+
+Make wywołuje gcc -Wall -ansi -pedantic -o program2.exe main.c oraz gcc -Wall -ansi -pedantic -o 1.exe 1.c capture.c, zaś make run: ./program2.exe

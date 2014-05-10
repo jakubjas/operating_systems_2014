@@ -1,0 +1,8 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Uruchamianie programów: exec
+
+Opis działania: Program, przy udziale funkcji fork(), za pomocą funkcji execl() trzykrotnie uruchamia podprogram 1.exe, który ma za zadanie wypisać identyfikatory UID, GID, PID, PPID i PGID dla danego procesu.
+
+Opis uruchamiania: make, a następnie make run
+Make wywołuje gcc -Wall -ansi -pedantic -o program2.exe main.c oraz gcc -Wall -ansi -pedantic -o 1.exe 1.c printdata.c, zaś make run: ./program2.exe

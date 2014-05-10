@@ -1,0 +1,8 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Wzajemne wykluczanie dla wątków - Muteksy
+
+Opis działania: Program implementujący przy pomocy muteksów systemu UNIX problem wzajemnego wykluczania się wątków. 
+
+Opis uruchamiania: make, a następnie make run
+Make wywołuje gcc -Wall -ansi -pedantic -o program.exe main.c -lpthread, zaś make run: ./program.exe

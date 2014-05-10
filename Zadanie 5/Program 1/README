@@ -1,0 +1,8 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Producent-konsument: potoki nazwane
+
+Opis działania: Realizuje treść zadania poprzedniego przy użyciu dwóch osobnych programów, uruchomionych w dwóch różnych konsolach. Komunikacja między nimi odbywa się poprzez potoki nazwane utworzone z linii komend.
+
+Opis uruchamiania: make, a następnie make run_producer oraz make run_consumer
+Make wywołuje gcc -Wall -ansi -pedantic -o program1.exe producer.c oraz gcc -Wall -ansi -pedantic -o program2.exe consumer.c, zaś make run_producer: mkfifo /tmp/fifo oraz ./program1.exe, make run_consumer: ./program2.exe

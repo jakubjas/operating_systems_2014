@@ -1,0 +1,8 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Procesy potomne: fork
+
+Opis działania: Program wywołuje trzykrotnie funkcję fork w pętli, przy czym wypisuje identyfikatory UID, GID, PID, PPID oraz PGID dla wszystkich procesów potomnych. Procesy wyświetlane są uporządkowane pokoleniami - od najstarszego (stworzonego dla i = 0) do najmłodszego (stworzonego dla i = 2).
+
+Opis uruchamiania: make, a następnie make run
+Make wywołuje gcc -Wall -ansi -pedantic -o program1.exe main.c printdata.c, zaś make run: ./program1.exe

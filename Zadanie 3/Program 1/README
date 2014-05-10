@@ -1,0 +1,20 @@
+Autor: Jakub Jas
+
+Nazwa zadania: Wysyłanie i obsługa sygnałów (program 1)
+
+Opis działania: Program ma za zadanie obsługę sygnałów. Z linii komend pobierana jest wybrana przez użytkownika opcja obsługi danego numeru sygnału oraz sam wspomniany numer. Obsługiwane opcje to: wykonanie operacji domyślnej, ignorowanie sygnału, przechwycenie i własna obsługa sygnału.
+
+Opis uruchamiania: Opcje obsługi dostępne w programie: 
+
+1 - wykonanie operacji domyślnej
+2 - ignorowanie sygnału
+3 - przechwycenie sygnału
+
+Aby uruchomić program stosujemy następujący schemat:
+make, a następnie make ARGS="<opcja obsługi> <numer sygnału>" run
+
+Gdzie w miejscu <opcja obsługi> wpisujemy np. 3 (przechwycenie sygnału), zaś w miejscu <numer sygnału> - jak sama nazwa wskazuje - numer obsługiwanego sygnału, np. dla SIGTERM będzie to 15.
+
+Make wywołuje gcc -Wall -ansi -pedantic -o program1.exe main.c capture.c , zaś make run: ./program1.exe <opcja obsługi> <numer sygnału>
+
+Np. dla poprzedniego przykładu będzie to: ./program1.exe 3 15
